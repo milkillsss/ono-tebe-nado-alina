@@ -16,7 +16,9 @@
   font-display: swap;
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     box-sizing: border-box;
 }
@@ -113,6 +115,7 @@ body {
 
 .header__links {
     color: rgba(0, 0, 0, 1);
+    width: 240px;
 }
 
 .links-item {
@@ -238,7 +241,7 @@ h2 {
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
-    margin-left: 117px;
+    margin-left: 64px;
 }
 
 .lots {
@@ -309,7 +312,7 @@ h2 {
 .lots-text {
     font-size: 20px;
     line-height: 100%;
-    margin-left: 117px;
+    margin-left: 64px;
     color: rgba(0, 0, 0, 1);
     text-decoration: underline;
     text-underline-offset: 5px;
