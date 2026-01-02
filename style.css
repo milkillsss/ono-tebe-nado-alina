@@ -20,13 +20,27 @@
 *::before,
 *::after {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-  width: 1100px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   font-family: Raleway, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .header__menu-ul,
@@ -38,7 +52,6 @@ body {
 .footer__menu-list {
     font-family: Raleway;
     font-weight: 400;
-    font-style: Regular;
     letter-spacing: 0%;
 }
 
@@ -47,7 +60,6 @@ body {
 .h2 {
     font-family: Raleway;
     font-weight: 700;
-    font-style: Bold;
 }
 
 .header-form {
@@ -55,9 +67,9 @@ body {
     height: 293px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     box-sizing: border-box;
-    align-items: center;
     padding: 0 50px;
     padding-top: 92px;
     padding-bottom: 92px;
@@ -160,47 +172,48 @@ body {
 }
 
 .cover__title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 165px;
-    z-index: 3;
-    
+  position: absolute;
+  top: 165px;
+  left: 50px;
+  right: 50px;
+  z-index: 3;
 }
 
 .cover-word {
-    position: relative;
-    font-size: 100px;
-    line-height: 114.99999999999999%;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 1);
-    letter-spacing: 30px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  display: flex;
+  gap: 30px;
 }
 
 .ono {
-    margin-left: 50px;
-    padding-bottom: 20px;
+  justify-content: flex-start;
+  padding-bottom: 20px;
 }
 
 .tebe {
-    margin-left: 380.5px;
-    left: 0;
+  justify-content: center;
 }
 
 .nado {
-    margin-left: 663px;
-    margin-right: 50px;
-    padding-top: 20px;
+  justify-content: flex-end;
+  padding-top: 20px;
 }
-
 .cover__description {
-    width: 1000px;
+    max-width: 1000px; 
+    margin: 0 50px;
     position: absolute;
     bottom: 50px;
     z-index: 3;
     display: flex;
     justify-content: space-between;
-    margin: 0 50px;
     align-items: center;
 }
 
@@ -215,7 +228,6 @@ body {
 .cover__button {
     font-family: Raleway;
     font-weight: 500;
-    font-style: Medium;
     font-size: 22px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -246,14 +258,18 @@ h2 {
 
 .lots {
     display: flex;
-    position: relative;
-    width: 100%;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 24px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .frame {
     position: relative;
-    width: 334px;
+    width: calc(33.333% - 20px);
+    max-width: 334px;
     height: 596px;
     margin: 27px 0 30px;
 }
@@ -278,7 +294,7 @@ h2 {
 }
 
 .frame-title-text {
-     position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
