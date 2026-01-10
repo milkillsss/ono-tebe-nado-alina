@@ -16,6 +16,7 @@
   font-display: swap;
 }
 
+*,
 *::before,
 *::after {
     margin: 0;
@@ -257,12 +258,12 @@ h2 {
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
-    margin-left: 64px;
 }
 
 .h2-lots {
     width: 121px;
     height: 47px;
+    margin: 0 0 0 64px;
 }
 
 .lots {
